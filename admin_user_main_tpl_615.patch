@@ -1,0 +1,33 @@
+From 7fcdee6a4b683b0ad938ad63d8c6a9cd8b3fc0ac Mon Sep 17 00:00:00 2001
+From: Daniel Seifert <ds@shopmodule.com>
+Date: Wed, 11 Mar 2020 16:05:01 +0100
+Subject: [PATCH] add patch changes
+
+---
+ source/Application/views/admin/tpl/user_main.tpl | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/source/Application/views/admin/tpl/user_main.tpl b/source/Application/views/admin/tpl/user_main.tpl
+index a8fae5f2d..1a2ad1bbc 100644
+--- a/source/Application/views/admin/tpl/user_main.tpl
++++ b/source/Application/views/admin/tpl/user_main.tpl
+@@ -26,6 +26,9 @@ function chkInsert()
+     <input type="hidden" name="cl" value="user_main">
+ </form>
+ 
++[{*** D3 MOD START *** REMOTELOGIN ***}]
++[{block name="d3_admin_user_main_aroundform"}]
++[{*** D3 MOD END *** REMOTELOGIN ***}]
+ <form name="myedit" id="myedit" action="[{$oViewConf->getSelfLink()}]" method="post" onSubmit="return chkInsert()">
+     [{$oViewConf->getHiddenSid()}]
+     <input type="hidden" name="cl" value="user_main">
+@@ -249,5 +252,9 @@ function chkInsert()
+ 
+ </form>
+ 
++[{*** D3 MOD START *** REMOTELOGIN ***}]
++   [{/block}]
++[{*** D3 MOD END *** REMOTELOGIN ***}]
++
+ [{include file="bottomnaviitem.tpl"}]
+ [{include file="bottomitem.tpl"}]
