@@ -1,0 +1,40 @@
+{
+  "name": "d3/remotelogin",
+  "description": "Login as Customer",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3",
+    "remote login"
+  ],
+  "authors": [
+    {
+      "name": "D3 Data Development (Inh. Thomas Dartsch)",
+      "email": "info@shopmodule.com",
+      "homepage": "http://www.d3data.de",
+      "role": "Owner"
+    }
+  ],
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "GPL3"
+  ],
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "d3/d3_remote"
+    },
+    "patches": {
+      "oxid-esales/oxideshop-ce": {
+        "add remote login template block - 2020-03-12": "https://git.d3data.de/D3Public/RemoteLogin/raw/commit/6d8cbaf45bd5c653baa5e7b53e70580412dc7177/admin_user_main_tpl_615.patch"
+      }
+    }
+  },
+  "require": {
+    "oxid-esales/oxideshop-ce": "6.0 - 6.3",
+    "d3/modcfg": "^5.1.2.0",
+    "cweagans/composer-patches": "~1.6.0"
+  }
+}
