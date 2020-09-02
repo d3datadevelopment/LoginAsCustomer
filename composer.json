@@ -13,7 +13,7 @@
     {
       "name": "D3 Data Development (Inh. Thomas Dartsch)",
       "email": "info@shopmodule.com",
-      "homepage": "http://www.d3data.de",
+      "homepage": "https://www.d3data.de",
       "role": "Owner"
     }
   ],
@@ -33,8 +33,7 @@
     }
   },
   "require": {
-    "php": "7.1 - 7.4",
-    "ext-ioncube-loader": "*",
+    "php": "7.1 - 7.4", "ext-ionCube-Loader": "*",
     "oxid-esales/oxideshop-ce": "6.0 - 6.3",
     "d3/modcfg": "^5.1.2.0",
     "cweagans/composer-patches": "~1.6.0"
