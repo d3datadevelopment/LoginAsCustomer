@@ -1,90 +1,33 @@
-<?php //006ef
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package LoginAsCustomer @version 3.0.1.1 PHP56 (28.04.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+$sLangName  = 'English';
+
+// -------------------------------
+// RESOURCE IDENTIFIER = STRING
+// -------------------------------
+$aLang = array(
+    'charset'                          => 'ISO-8859-15',
+
+    'D3_REMOTELOGIN_DESC_URADMUSR'     => 'admin username:',
+    'D3_REMOTELOGIN_DESC_URADMPWD'     => 'admin password:',
+    'D3_REMOTELOGIN_DESC_LGNASCST'     => 'Login as Customer',
+    'D3_REMOTELOGIN_SHOPSELECT'        => 'Login in Mall:',
+    'D3_REMOTELOGIN_SHOPSELECT_DESC'   => 'Die Mandantenauswahl steht Ihnen zur Verfügung, wenn:
+                                                        <ul>
+                                                            <li>Sie eine Enterprise-Edition einsetzen und</li>
+                                                            <li>Sie mehrere Shopmandanten eingerichtet haben und</li>
+                                                            <li>Sie erlauben, dass sich Benutzer in allen Shops anmelden können (Stammdaten -> Grundeinstellungen -> Mall) und</li>
+                                                            <li>Sie dieses Modul in dem Zielmandanten unter "Erweiterungen" aktiviert haben und</li>
+                                                            <li>Sie eine gültige Modullizenz im Zielmandanten eingegeben haben und </li>
+                                                            <li>Sie den Aktiv-Haken am Modul im Zielmandanten gesetzt haben (D3 Module -> Modul-Connector -> Modulverwaltung)</li>
+                                                        </ul> Wechseln Sie sonst im Adminbereich in den jeweiligen Shopmandanten, um sich von dort aus anzumelden.',
+    'D3_REMOTELOGIN_NOSELECTABLESHOP'  => 'no selectable shop available',
+    'D3_REMOTELOGIN_CURSELECT'         => 'vorgewählte Währung',
+    'D3_REMOTELOGIN_CURSELECT_DESC'    => 'Die Währungsliste basiert auf dem aktuell im Adminbereich gewählten Shop. Führen Sie die Anmeldung in einen anderen Mandanten durch, kann es sein, dass dieser andere Währungen in anderer Reihenfolge verwendet. Möglicherweise waerden andere Währungen dort auch gar nicht angeboten. Diese Auswahl ist demnach unverbindlich und kann unter Umständen zu Fehlern führen. Behalten Sie im Zweifel die voreingestellte Auswahl bei.',
+    'D3_REMOTELOGIN_LANGSELECT'        => 'vorgewählte Sprache',
+    'D3_REMOTELOGIN_LANGSELECT_DESC'   => 'Die Sprachliste basiert auf dem aktuell im Adminbereich gewählten Shop. Führen Sie die Anmeldung in einen anderen Mandanten durch, kann es sein, dass dieser andere Sprachen in anderer Reihenfolge verwendet. Möglicherweise waerden andere Sprachen dort auch gar nicht angeboten. Diese Auswahl ist demnach unverbindlich und kann unter Umständen zu Fehlern führen. Behalten Sie im Zweifel die voreingestellte Auswahl bei.',
+    'D3_REMOTELOGIN_HEADER'            => 'D³ Login as Customer',
+    'D3_REMOTELOGIN_NOVALIDLICENCE'    => 'The module is not active or has no valid licence key.',
+
+    'D3_REMOTELOGIN_LACGROUP'          => '<img src="../modules/d3/modcfg/public/d3logo.php" alt="D³" title="D³ Data Development"> Login As Customer-Gruppe',
+    'D3_REMOTELOGIN_LACGROUP_DESC'     => 'Wenn Sie diesen Haken setzen, wird jeder Kunde, der im Frontent über das Login As Customer-Modul angemeldet wird, automatisch dieser Kundengruppe angehören. Diese Einstellung ist nur während der Login As Customer-Session gültig. Meldet sich der Kunde selbst üer die üblichen Login-Möglichkeiten an, ist diese Kundengruppe dann nicht verfügbar.<br><br>Weisen Sie diesen speziellen Kundengruppen daher bitte keine Benutzer zu.<br><br>Sie können diese Funktion zum Beispiel verwenden, um für fremdangemeldete Benutzer spezielle Zahlarten zur Verfügung zu stellen, die die regulären Kunden sonst nicht erhalten.',
+);

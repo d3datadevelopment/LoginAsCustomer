@@ -2,6 +2,14 @@
 title: Changelog
 ---
 
+## 3.0.1.2 - (2020-09-02)
+### Changed
+- Dokumentation überarbeitet
+
+### Fixed
+- veralteter Bildpfad im Admin
+---
+
 ## 3.0.1.1 - (2020-04-28)
 ### Changed
 - Dokumentation angepasst

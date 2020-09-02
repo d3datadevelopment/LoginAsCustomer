@@ -1,67 +1,69 @@
-<?php //006ef
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package LoginAsCustomer @version 3.0.1.1 PHP56 (28.04.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-pCDv/TtRGBirH6RhSoUw2sfBqW==
+<?php
+
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @link      http://www.oxidmodule.com
+ */
+
+/**
+ * Metadata version
+ */
+$sMetadataVersion = '1.1';
+
+/**
+ * Module information
+ */
+$aModule = array(
+    'id'          => 'd3_remote',
+    'title'       =>
+        '<svg style="height:1em;width:1em"><image xlink:href="https://logos.oxidmodule.com/d3logo.svg" style="height:1em;width:1em" /></svg> '.
+        'Login as Customer',
+    'description' => array(
+        'de' => '&Uuml;ber den Admin kann man sich als Kunde im Shop-Frontend anmelden. '
+               .'Hier hat man dann die M&ouml;glichkeit Bestellungen f&uuml;r den Kunden durchzuf&uuml;hren.',
+        'en' => '',
+    ),
+    'thumbnail'   => 'picture.png',
+    'version'     => '3.0.1.2',
+    'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
+    'email'       => 'support@shopmodule.com',
+    'url'         => 'http://www.oxidmodule.com/',
+    'extend'      => array(
+        'oxuser'        => 'd3/d3_remote/modules/models/d3_oxuser_remotelogin',
+        'oxcmp_user'    => 'd3/d3_remote/modules/components/d3_oxcmp_user_remotelogin',
+        'user_main'     => 'd3/d3_remote/modules/controllers/admin/d3_user_main_remotelogin',
+    ),
+
+    'files'       => array(
+        'd3_remotelogin_update' => 'd3/d3_remote/models/d3_remotelogin_update.php',
+    ),
+    'templates'   => array(
+    ),
+    'events'      => array(
+        'onActivate' => '\D3\ModCfg\Application\Model\Install\d3install::checkUpdateStart',
+    ),
+    'blocks'      => array(
+        array(
+            'template' => 'user_main.tpl',
+            'block'    => 'd3_admin_user_main_aroundform',
+            'file'     => 'views/admin/blocks/d3_remote_user_main.tpl'
+        ),
+        array(
+            'template' => 'usergroup_main.tpl',
+            'block'    => 'admin_usergroup_main_form',
+            'file'     => 'views/admin/blocks/d3_remote_usergroup_main.tpl'
+        ),
+    ),
+    'd3SetupClasses' => array(
+        'd3_remotelogin_update',
+    ),
+);
