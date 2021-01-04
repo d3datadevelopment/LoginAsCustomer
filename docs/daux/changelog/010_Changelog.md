@@ -2,6 +2,11 @@
 title: Changelog
 ---
 
+## 3.0.1.3 - (2021-01-04)
+### Added
+- Freigabe für OXID 6.2.x
+---
+
 ## 3.0.1.2 - (2020-09-02)
 ### Changed
 - Dokumentation überarbeitet
