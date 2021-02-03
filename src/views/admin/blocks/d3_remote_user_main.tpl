@@ -1,8 +1,7 @@
 <script type="text/javascript">
     <!--
         function fncShopChange(value){
-
-            formular = document.getElementById("editShopChange");
+            let formular = document.getElementById("editShopChange");
             formular.action = value;
         }
     -->
@@ -13,8 +12,7 @@
 
 [{$smarty.block.parent}]
 
-[{d3modcfgcheck modid="d3_remote"}]
-[{/d3modcfgcheck}]
+[{d3modcfgcheck modid="d3_remote"}][{/d3modcfgcheck}]
 
 [{if $edit}]
     [{assign var="blMallSelect" value=$oView->getAllMallsOk()}]
@@ -31,25 +29,25 @@
                 [{if $mod_d3_remote}]
                     <tr>
                         <td>
-                            [{oxmultilang ident="D3_REMOTELOGIN_DESC_URADMUSR"}]
+                            <label for="lgn_admusr">[{oxmultilang ident="D3_REMOTELOGIN_DESC_URADMUSR"}]</label>
                         </td>
                         <td>
-                            <input type="text" size="30" name="lgn_admusr" value="">
+                            <input id="lgn_admusr" type="text" size="30" name="lgn_admusr" value="">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            [{oxmultilang ident="D3_REMOTELOGIN_DESC_URADMPWD"}]
+                            <label for="lgn_admpwd">[{oxmultilang ident="D3_REMOTELOGIN_DESC_URADMPWD"}]</label>
                         </td>
                         <td>
-                            <input type="password" size="30" name="lgn_admpwd" value="">
+                            <input id="lgn_admpwd" type="password" size="30" name="lgn_admpwd" value="">
                         </td>
                     </tr>
 
                     [{if $blMallSelect}]
                         <tr>
                             <td>
-                                [{oxmultilang ident="D3_REMOTELOGIN_SHOPSELECT"}]
+                                <label for="remoteSelectshop">[{oxmultilang ident="D3_REMOTELOGIN_SHOPSELECT"}]</label>
                             </td>
                             <td>
                                 <select id="remoteSelectshop" class="folderselect" onchange="fncShopChange(this.value);">
@@ -63,10 +61,10 @@
                     [{else}]
                         <tr>
                             <td>
-                                [{oxmultilang ident="D3_REMOTELOGIN_SHOPSELECT"}]
+                                <label for="folderselect">[{oxmultilang ident="D3_REMOTELOGIN_SHOPSELECT"}]</label>
                             </td>
                             <td>
-                                <select class="folderselect" disabled>
+                                <select id="folderselect" class="folderselect" disabled>
                                     <option>[{oxmultilang ident="D3_REMOTELOGIN_NOSELECTABLESHOP"}]</option>
                                 </select>
                                 [{oxinputhelp ident="D3_REMOTELOGIN_SHOPSELECT_DESC"}]
@@ -75,7 +73,7 @@
                     [{/if}]
                     <tr>
                         <td>
-                            [{oxmultilang ident="D3_REMOTELOGIN_CURSELECT"}]
+                            <label for="remoteSelectCur">[{oxmultilang ident="D3_REMOTELOGIN_CURSELECT"}]</label>
                         </td>
                         <td>
                             <select id="remoteSelectCur" name="cur" class="folderselect">
@@ -88,7 +86,7 @@
                     </tr>
                     <tr>
                         <td>
-                            [{oxmultilang ident="D3_REMOTELOGIN_LANGSELECT"}]
+                            <label for="remoteSelectlang">[{oxmultilang ident="D3_REMOTELOGIN_LANGSELECT"}]</label>
                         </td>
                         <td>
                             <select id="remoteSelectlang" name="lang" class="folderselect">

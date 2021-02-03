@@ -1,7 +1,5 @@
 <?php
 
-use D3\ModCfg\Application\Model\Install\d3install_updatebase;
-
 /**
  * This Software is the property of Data Development and is protected
  * by copyright law - it is NOT Freeware.
@@ -17,6 +15,10 @@ use D3\ModCfg\Application\Model\Install\d3install_updatebase;
  * @link      http://www.oxidmodule.com
  */
 
+namespace D3\Remotelogin\models;
+
+use D3\ModCfg\Application\Model\Install\d3install_updatebase;
+
 class d3_remotelogin_update extends d3install_updatebase
 {
     /**
@@ -25,45 +27,33 @@ class d3_remotelogin_update extends d3install_updatebase
     public $sModKey      = 'd3_remote';
 
     /**
-     * @var string${CARET}
+     * @var string
      */
     public $sModName     = 'Login as Customer';
 
     /**
-     * @var string${CARET}
+     * @var string
      */
-    public $sModVersion  = '3.0.1.3';
+    public $sModVersion  = '4.0.0.0';
 
     /**
-     * @var string${CARET}
+     * @var string
      */
-    public $sModRevision = '3013';
+    public $sModRevision = '4000';
 
     /**
-     * @var string${CARET}
+     * @var string
      */
     public $sBaseConf = <<<KEY
 --------------------------------------------------------------------------------
-j2Vv2==R2pVYitLekRPVjdFNE0vWHNPdWZPOWdYZGxjQm1nZXJ4UFNSYytXMklpbEE2VE9Ic0Y4NnhrV
-2l4RGtuRW41elIwajIwSEUyaDVHNXZDdzNFVXBKRkVIWWpUcUxXSm1RcHlpelA0MGpiZktCeW92aXRoW
-W40aDBpWlhDOGNPKzRiRFZtNTdhVlJOVUxLT1I3NEdFTHpxelh3bWJDYm40TitLL05adjVKaFlnVTc1Q
-XVsNU9rbTRFYy9oWVdiSUhDNVVra1UzcHUrbW5pVjdxMERrT2xtL2FhTXlsL0ZEN0M3OVc2TjZ6YWVVN
-0xsczdkYjFjYlpZSnRDSFFmbnhnU0VVVUhYSGdoZlBmb1pmVnlxWjRwdXJnYkJrbHp3TjJqTG9WQmVoT
-k96UktESFZxdUxscE9VaGl3RGo2d2FMRTRXY1AxNUlOUi9oREdwUDdEdS9Lb1pRPT0=
+52dv2==WXJrb1V5ZEdJRWM1SW81Ti9vdVIrbDV3c0xrM1BCdEJDZHU5Y0phZmZFWHo2QmRITWdVZXpiU
+zhXVEtkR3ZjZ3MwVzVMSTFkWDlUb0Y2MlpvRmloU28zUWR2K3ZVemFOeWtXSDBXSFZLZXlOTFZRNkJQU
+TdYQk9xLzBlMUc3NzZLUWdwZDFVNlRGZVMvNGtqclpQQkxicEtMejJUdjNtRHJOcW9VaWJqZlBzRkZHK
+2d4S0RDVnppQ21sQStDNGx0M3Iwc2FuRFJ0QXd1Zk9JUS84WG1Ec0dpZHJEc3VDQ1NFWVdZNVM2eFVVM
+WZ0b3NDUkFKWUU1WThpdGJSOHRXb1ZqblpwS2YyczNtSG03K0dMbVRBZFpIb1R6VUNVdVhqRzB3TlFuc
+2x5Q2x2UjhnT2tGQ0h2b21xeHhHNzRHNWRnUWpycjlpTjFjNFBVc2ZPQWZGY0dRPT0=
 --------------------------------------------------------------------------------
 KEY;
-
-    /**
-     * @var string${CARET}
-     */
-    public $sRequirements = '<?xml version="1.0" encoding="UTF-8"?>
-      <jobs>
-        <registerModule>
-          <module class="oxuser" modulepath="d3/d3_remote/modules/core/d3_oxuser_remotelogin" />
-          <module class="oxcmp_user" modulepath="d3/d3_remote/modules/components/d3_oxcmp_user_remotelogin" />
-          <module class="user_main" modulepath="d3/d3_remote/modules/controllers/admin/d3_user_main_remotelogin" />
-        </registerModule>
-      </jobs>';
 
     /**
      * @var string
@@ -73,22 +63,26 @@ KEY;
     /**
      * @var array
      */
-    protected $_aUpdateMethods = array(
-        array('check' => 'checkModCfgItemExist',
-              'do'    => 'updateModCfgItemExist'),
-        array('check' => 'checkFields',
-              'do'    => 'fixFields'),
-        array('check' => 'checkModCfgSameRevision',
-              'do'    => 'updateModCfgSameRevision'),
-    );
+    protected $_aUpdateMethods = [
+        [
+            'check' => 'checkModCfgItemExist',
+            'do'    => 'updateModCfgItemExist'
+        ],
+        [
+            'check' => 'checkFields',
+            'do'    => 'fixFields'
+        ],
+        [
+            'check' => 'checkModCfgSameRevision',
+            'do'    => 'updateModCfgSameRevision'
+        ],
+    ];
 
     /**
      * @var array
      */
-    public $aFields = array
-    (
-        'D3LOGINASCUSTGROUP'      => array
-        (
+    public $aFields = [
+        'D3LOGINASCUSTGROUP'      => [
             'sTableName'  => 'oxgroups',
             'sFieldName'  => 'D3LOGINASCUSTGROUP',
             'sType'       => 'TINYINT(1)',
@@ -96,12 +90,10 @@ KEY;
             'sDefault'    => '0',
             'sComment'    => 'via login_as_customer signed in users in this session assigned group',
             'sExtra'      => '',
-            'blMultilang' => false,
-        ),
-    );
+            'blMultilang' => false, ], ];
 
     /**
      * @var array
      */
-    protected $_aRefreshMetaModuleIds = array('d3_remote');
+    protected $_aRefreshMetaModuleIds = [ 'd3_remote' ];
 }

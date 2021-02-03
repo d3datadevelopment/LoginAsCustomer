@@ -13,6 +13,17 @@
  * @link      http://www.oxidmodule.com
  */
 
+namespace D3\Remotelogin\modules\controllers\admin;
+
+use Exception;
+use OxidEsales\Eshop\Application\Model\ShopList;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
+use OxidEsales\Facts\Facts;
+use OxidEsales\Eshop\Application\Model\Shop as Shop;
+
 class d3_user_main_remotelogin extends d3_user_main_remotelogin_parent
 {
     /**
@@ -21,81 +32,88 @@ class d3_user_main_remotelogin extends d3_user_main_remotelogin_parent
      * @return bool
      * @throws Exception
      */
-    public function getAllMallsOk()
+    public function getAllMallsOk(): bool
     {
-        $edition =  (new OxidEsales\Facts\Facts)->getEdition();
-        $allUser = $this->getConfig()->getConfigParam( 'blMallUsers' );
+        $edition =  oxNew( Facts::class)->getEdition();
+        // mall setting in admin (Benutzer koennen sich in allen Shops anmelden)
+        $mallUser = Registry::getConfig()->getConfigParam( 'blMallUsers' );
 
-        if (strtoupper($edition) == "EE" && $allUser == TRUE){
-            return TRUE;
-        }else{
-            return FALSE;
-        }
+        return in_array(strtoupper( $edition ), ['EE', 'B2B'], true) && $mallUser == true;
     }
 
     /**
      * @return array
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws oxSystemComponentException
+     * @throws DatabaseConnectionException
      */
-    public function d3GetMallShopList()
+    public function d3GetMallShopList(): array
     {
-        $oShopList = oxnew ('oxshoplist');
-        $tmpArray = array();
+        $oShopList = oxNew( ShopList::class);
+        $tmpArray = [];
 
-        /** @var $oShop oxshop */
+        /** @var $oShop Shop */
         foreach($oShopList->getList()->getArray() as $oShop)
         {
-            $tmpArray[] = array("oxid" => $oShop->getFieldData('oxid'),
-                                "oxname" => $oShop->getFieldData('oxname'),
-                                "url"   => $this->_d3getMallUrl($oShop)
-            );
+            $tmpArray[] = [
+                "oxid"   => $oShop->getFieldData( 'oxid'),
+                "oxname" => $oShop->getFieldData('oxname'),
+                "url"    => $this->_d3getMallUrl($oShop)
+            ];
         }
 
         return $tmpArray;
     }
 
     /**
-     * @param \OxidEsales\EshopCommunity\Application\Model\Shop $oShop oxshop
+     * @param Shop $oShop
      *
-     * @return string
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws oxSystemComponentException
+     * @return false|mixed|string
      * @throws Exception
      */
-    protected function _d3getMallUrl(\OxidEsales\EshopCommunity\Application\Model\Shop $oShop)
+    protected function _d3getMallUrl(Shop $oShop)
     {
-        if ((new OxidEsales\Facts\Facts)->getEdition())
-        {
-            $sSelect = "SELECT ".oxRegistry::getConfig()->getDecodeValueQuery( "oxvarvalue" )." FROM ".getViewName('oxconfig')." WHERE oxshopid = ".oxDb::getDb()->quote($oShop->getId())." AND oxvarname = 'sMallShopURL';";
-            $sUrl = oxDb::getDb()->getOne($sSelect);
+        $sUrl = '';
 
-            if (!$sUrl)
-            {
+        if (in_array(oxNew(Facts::class)->getEdition(), ['EE', 'B2B'], true)) {
+            $queryBuilder = ContainerFactory::getInstance()->getContainer()->get(QueryBuilderFactoryInterface::class)->create();
+            $queryBuilder->select(Registry::getConfig()->getDecodeValueQuery())
+                ->from('oxconfig')
+                ->where(
+                    $queryBuilder->expr()->andX(
+                        $queryBuilder->expr()->eq(
+                            'oxshopid',
+                            $queryBuilder->createNamedParameter($oShop->getId())
+                        ),
+                        $queryBuilder->expr()->eq(
+                            'oxvarname',
+                            $queryBuilder->createNamedParameter('sMallShopURL')
+                        )
+                    )
+                );
+            $sUrl = $queryBuilder->execute()->fetchColumn();
+
+            if (false === $sUrl || $sUrl === '') {
                 // method exists in EE only
                 $aUrls = $oShop->getUrls();
                 $sUrl = $aUrls[0].'?shp='.$oShop->getId();
             }
-
-            return $sUrl;
         }
 
-        return '';
+        return $sUrl;
     }
 
     /**
      * @return array
      */
-    public function d3GetShopLangList()
+    public function d3GetShopLangList(): array
     {
-        return oxRegistry::getLang()->getLanguageArray();
+        return Registry::getLang()->getLanguageArray();
     }
 
     /**
      * @return array
      */
-    public function d3GetShopCurList()
+    public function d3GetShopCurList(): array
     {
-        return oxRegistry::getConfig()->getCurrencyArray();
+        return Registry::getConfig()->getCurrencyArray();
     }
 }

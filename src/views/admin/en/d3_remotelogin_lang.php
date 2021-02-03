@@ -4,30 +4,30 @@ $sLangName  = 'English';
 // -------------------------------
 // RESOURCE IDENTIFIER = STRING
 // -------------------------------
-$aLang = array(
+$aLang = [
     'charset'                          => 'ISO-8859-15',
 
     'D3_REMOTELOGIN_DESC_URADMUSR'     => 'admin username:',
     'D3_REMOTELOGIN_DESC_URADMPWD'     => 'admin password:',
     'D3_REMOTELOGIN_DESC_LGNASCST'     => 'Login as Customer',
     'D3_REMOTELOGIN_SHOPSELECT'        => 'Login in Mall:',
-    'D3_REMOTELOGIN_SHOPSELECT_DESC'   => 'Die Mandantenauswahl steht Ihnen zur Verfügung, wenn:
-                                                        <ul>
-                                                            <li>Sie eine Enterprise-Edition einsetzen und</li>
-                                                            <li>Sie mehrere Shopmandanten eingerichtet haben und</li>
-                                                            <li>Sie erlauben, dass sich Benutzer in allen Shops anmelden können (Stammdaten -> Grundeinstellungen -> Mall) und</li>
-                                                            <li>Sie dieses Modul in dem Zielmandanten unter "Erweiterungen" aktiviert haben und</li>
-                                                            <li>Sie eine gültige Modullizenz im Zielmandanten eingegeben haben und </li>
-                                                            <li>Sie den Aktiv-Haken am Modul im Zielmandanten gesetzt haben (D3 Module -> Modul-Connector -> Modulverwaltung)</li>
-                                                        </ul> Wechseln Sie sonst im Adminbereich in den jeweiligen Shopmandanten, um sich von dort aus anzumelden.',
+    'D3_REMOTELOGIN_SHOPSELECT_DESC'   => 'The client selection is available if:
+        <ul>
+            <li>you are using an Enterprise Edition and</li>
+            <li>you have set up several shop clients and</li>
+            <li>you allow users to log in from other shops (Master Settings -> Core Settings -> Mall) and</li>
+            <li>you have activated this module in the target client under "Extensions" and</li>
+            <li>you have entered a valid module licence in the target client and </li>
+            <li>you have set the active checkbox at the module in the target client (D3 Modules -> Module Connector -> Module Administration)</li>
+        </ul> Otherwise, switch to the respective shop client in the admin area to log in from there.',
     'D3_REMOTELOGIN_NOSELECTABLESHOP'  => 'no selectable shop available',
-    'D3_REMOTELOGIN_CURSELECT'         => 'vorgewählte Währung',
-    'D3_REMOTELOGIN_CURSELECT_DESC'    => 'Die Währungsliste basiert auf dem aktuell im Adminbereich gewählten Shop. Führen Sie die Anmeldung in einen anderen Mandanten durch, kann es sein, dass dieser andere Währungen in anderer Reihenfolge verwendet. Möglicherweise waerden andere Währungen dort auch gar nicht angeboten. Diese Auswahl ist demnach unverbindlich und kann unter Umständen zu Fehlern führen. Behalten Sie im Zweifel die voreingestellte Auswahl bei.',
-    'D3_REMOTELOGIN_LANGSELECT'        => 'vorgewählte Sprache',
-    'D3_REMOTELOGIN_LANGSELECT_DESC'   => 'Die Sprachliste basiert auf dem aktuell im Adminbereich gewählten Shop. Führen Sie die Anmeldung in einen anderen Mandanten durch, kann es sein, dass dieser andere Sprachen in anderer Reihenfolge verwendet. Möglicherweise waerden andere Sprachen dort auch gar nicht angeboten. Diese Auswahl ist demnach unverbindlich und kann unter Umständen zu Fehlern führen. Behalten Sie im Zweifel die voreingestellte Auswahl bei.',
-    'D3_REMOTELOGIN_HEADER'            => 'D³ Login as Customer',
+    'D3_REMOTELOGIN_CURSELECT'         => 'preselected currency',
+    'D3_REMOTELOGIN_CURSELECT_DESC'    => 'The currency list is based on the shop currently selected in the admin area. If you log on to another client, it may be that this client uses other currencies in a different order. It is also possible that other currencies are not offered there at all. This selection is therefore not binding and may lead to errors. If in doubt, keep the preset selection.',
+    'D3_REMOTELOGIN_LANGSELECT'        => 'preselected language',
+    'D3_REMOTELOGIN_LANGSELECT_DESC'   => 'The language list is based on the shop currently selected in the admin area. If you log on to another client, it is possible that this client will use other languages in a different order. It is also possible that other languages are not offered there at all. This selection is therefore not binding and may lead to errors. If in doubt, keep the preset selection.',
+    'D3_REMOTELOGIN_HEADER'            => '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em"> Login as Customer',
     'D3_REMOTELOGIN_NOVALIDLICENCE'    => 'The module is not active or has no valid licence key.',
 
-    'D3_REMOTELOGIN_LACGROUP'          => '<img src="../modules/d3/modcfg/public/d3logo.php" alt="D³" title="D³ Data Development"> Login As Customer-Gruppe',
-    'D3_REMOTELOGIN_LACGROUP_DESC'     => 'Wenn Sie diesen Haken setzen, wird jeder Kunde, der im Frontent über das Login As Customer-Modul angemeldet wird, automatisch dieser Kundengruppe angehören. Diese Einstellung ist nur während der Login As Customer-Session gültig. Meldet sich der Kunde selbst üer die üblichen Login-Möglichkeiten an, ist diese Kundengruppe dann nicht verfügbar.<br><br>Weisen Sie diesen speziellen Kundengruppen daher bitte keine Benutzer zu.<br><br>Sie können diese Funktion zum Beispiel verwenden, um für fremdangemeldete Benutzer spezielle Zahlarten zur Verfügung zu stellen, die die regulären Kunden sonst nicht erhalten.',
-);
+    'D3_REMOTELOGIN_LACGROUP'          => '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em"> Login As Customer-Gruppe',
+    'D3_REMOTELOGIN_LACGROUP_DESC'     => 'If you check this box, every customer who is logged in to Frontent via the Login As Customer module will automatically belong to this customer group. This setting is only valid during the Login As Customer session. If the customer logs in himself via the usual login options, this customer group will then not be available.<br><br>Therefore, please do not assign any users to these special customer groups.<br><br>You can use this function, for example, to make special payment types available to users logged in by others, which the regular customers do not otherwise receive.',
+];

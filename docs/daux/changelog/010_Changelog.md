@@ -2,9 +2,13 @@
 title: Changelog
 ---
 
-## 3.0.1.3 - (2021-01-04)
+## 4.0.0.0 - (2021-02-03)
+
+**Minor version upgrade notice: there are some backward-incompatible changes to this release.**
+
 ### Added
-- Freigabe für OXID 6.2.x
+- Überarbeitung für vollständige Unterstützung von OXID 6.2.x
+
 ---
 
 ## 3.0.1.2 - (2020-09-02)
