@@ -2,12 +2,22 @@
 title: Changelog
 ---
 
+## 3.0.1.3 - (2021-02-26)
+### Changed
+- Dokumentation überarbeitet
+
+### Fixed
+- falsche Gruppenzuordnungen für remote angemeldete Kunden korrigiert
+
+---
+
 ## 3.0.1.2 - (2020-09-02)
 ### Changed
 - Dokumentation überarbeitet
 
 ### Fixed
 - veralteter Bildpfad im Admin
+
 ---
 
 ## 3.0.1.1 - (2020-04-28)
