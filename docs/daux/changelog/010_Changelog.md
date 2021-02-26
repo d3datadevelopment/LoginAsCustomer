@@ -2,6 +2,15 @@
 title: Changelog
 ---
 
+## 4.0.0.1 - (2021-02-26)
+### Changed
+- Dokumentation überarbeitet
+
+### Fixed
+- falsche Gruppenzuordnungen für remote angemeldete Kunden korrigiert
+
+---
+
 ## 4.0.0.0 - (2021-02-03)
 
 **Minor version upgrade notice: there are some backward-incompatible changes to this release.**
@@ -17,6 +26,7 @@ title: Changelog
 
 ### Fixed
 - veralteter Bildpfad im Admin
+
 ---
 
 ## 3.0.1.1 - (2020-04-28)
