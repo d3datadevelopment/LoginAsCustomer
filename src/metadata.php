@@ -33,7 +33,7 @@ $aModule = array(
         'en' => '',
     ),
     'thumbnail'   => 'picture.png',
-    'version'     => '3.0.1.2',
+    'version'     => '3.0.1.3',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
     'url'         => 'http://www.oxidmodule.com/',
@@ -62,8 +62,5 @@ $aModule = array(
             'block'    => 'admin_usergroup_main_form',
             'file'     => 'views/admin/blocks/d3_remote_usergroup_main.tpl'
         ),
-    ),
-    'd3SetupClasses' => array(
-        'd3_remotelogin_update',
     ),
 );
