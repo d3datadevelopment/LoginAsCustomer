@@ -100,6 +100,16 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            [{oxmultilang ident="D3_REMOTELOGIN_ANALYSISMODE"}]
+                        </td>
+                        <td>
+                            <input type="hidden" name="d3analysismode" value="0">
+                            <input type="checkbox" name="d3analysismode" value="1">
+                            [{oxinputhelp ident="D3_REMOTELOGIN_ANALYSISMODE_DESC"}]
+                        </td>
+                    </tr>
+                    <tr>
                         <td colspan="2">
                             <input type="submit" value="[{oxmultilang ident="D3_REMOTELOGIN_DESC_LGNASCST"}]">
                         </td>

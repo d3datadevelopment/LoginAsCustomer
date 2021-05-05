@@ -1,9 +1,9 @@
 {
     "title": "<i class='fab fa-d3 d3fa-color-blue'></i> Login As Customer",
-    "moduleversion": "4.0.0.1",
+    "moduleversion": "4.0.1.0",
     "titledesc": "für den Oxid eShop",
     "author": "D³ Data Development",
-    "moduledate": "26.02.2021",
+    "moduledate": "05.05.2021",
     "editors": "",
     "tagline": "",
     "image": "",
@@ -64,6 +64,7 @@
         "modulename"    : "<i class='fab fa-d3 d3fa-color-blue'></i> Login As Customer",
         "menutitle"     : "<i class='fab fa-d3 d3fa-color-blue'></i> Login As Customer",
         "modulefolder"  : "d3_remote",
+        "metadataident" : "d3_remote",
         "modcfgident"   : "d3_remote",
         "composerident" : "d3/remotelogin"
     },

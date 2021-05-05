@@ -2,6 +2,8 @@
 title: Dateien erneuern
 ---
 
+### **auf der Kommandozeile**
+
 Starten Sie die Konsole Ihres Webservers und wechseln in das Hauptverzeichnis Ihres 
 Shops (oberhalb des `source`- und `vendor`-Verzeichnisses). Führen Sie dort diesen Befehl aus:
 

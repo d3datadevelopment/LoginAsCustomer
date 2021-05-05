@@ -25,6 +25,8 @@ $aLang = [
     'D3_REMOTELOGIN_CURSELECT_DESC'    => 'The currency list is based on the shop currently selected in the admin area. If you log on to another client, it may be that this client uses other currencies in a different order. It is also possible that other currencies are not offered there at all. This selection is therefore not binding and may lead to errors. If in doubt, keep the preset selection.',
     'D3_REMOTELOGIN_LANGSELECT'        => 'preselected language',
     'D3_REMOTELOGIN_LANGSELECT_DESC'   => 'The language list is based on the shop currently selected in the admin area. If you log on to another client, it is possible that this client will use other languages in a different order. It is also possible that other languages are not offered there at all. This selection is therefore not binding and may lead to errors. If in doubt, keep the preset selection.',
+    'D3_REMOTELOGIN_ANALYSISMODE'      => 'analysis mode',
+    'D3_REMOTELOGIN_ANALYSISMODE_DESC' => 'When logging in via this form, additional customer groups are activated for the user, which the regular shop visitor does not have (can be activated at the customer groups). This makes it possible to make special payment methods available to users who are not registered. However, this is a hindrance to the analysis of regular shop behaviour. Check this box to prevent the temporary addition of user groups. To switch between the analysis mode and the regular mode, please log in to the frontend using this form.',
     'D3_REMOTELOGIN_HEADER'            => '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em"> Login as Customer',
     'D3_REMOTELOGIN_NOVALIDLICENCE'    => 'The module is not active or has no valid licence key.',
 
