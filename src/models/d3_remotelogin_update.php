@@ -34,24 +34,24 @@ class d3_remotelogin_update extends d3install_updatebase
     /**
      * @var string
      */
-    public $sModVersion  = '4.0.1.0';
+    public $sModVersion  = '4.0.1.1';
 
     /**
      * @var string
      */
-    public $sModRevision = '4010';
+    public $sModRevision = '4011';
 
     /**
      * @var string
      */
     public $sBaseConf = <<<KEY
 --------------------------------------------------------------------------------
-S39v2==a0QrNkJOT2hobkNlc3FiWGpUb1ZpUmhhdHg5VHZ0cXIwMGJSS1V1MGNtNXFUUmVOMmV1UkNOW
-U1PaFRhckxRVGlpaHZ6dm85V01zRGp3dy81UFZ4cmJzRVVpL1lzSjVjYzNGUzVrT3I1MlZWL0JSYTg1N
-mxwWnoxV21sMnJpWWg0b3E3eFkyRE9FYWk2M0lHSnh3QjBEdHRuYlJtMktwWm1tMlBSUjFNcGg1eDNCT
-XNjN0FKdXB0MW82Tkx0VXJVbDlDUDFnVjBhM0k1c0h3YWVEamRYcjZjNFA3YVlrVG9BUTl5SDJsUnNYS
-UQ4S3pJc3d5bDNuQ0EzYU5MWm9meWdHaDRzWldyYUN2NkJaQzQ5c3RkNDduWVc5Y3Y5MldmRzFsazEzN
-ENQVEV5b1gvNW1ZZU1NeWo5SG5lSnc4Nm9IWitFYms0Zm5nSFA2bHVrZkxZckZBPT0=
+0cUv2==cCtMOXhLT1VQNCt4TU1xS2pmQ0ZCV0dvMmU3Vyt1RzQ5UUVKV1Z4QUpsSGxpSGlDWENUelNyS
+3A3QzFjUW9FYkZjWVg0SUtDZHdqSW5CVnp3RUhvbDc4SXNmWFNlRWFsVXhBcDFuRDQxWko4VDNKcGN6S
+jk0V0JkL1pzdmpIcVVZbzJwNW9aNVdYdGRid2NtWXN4bVhjUXBueWNPRU5Jc3hoS3lOU3lqRmNlVnF3N
+lhXZDdIdVlrWDI2Syt1UU8yM0NKcXB1bStSNlZRVEFjM241bGtKYjhMbjR6ZDh5YXZBWEUxRS9NcEtDb
+mRpTVZpcWFXQTFMcFBIOHNJNm5Ua0tSeTdNNTVDQ0VGaE1uWDBsU0xKYlJBNmhZM3hjcjhsVXp2d1IzN
+TU3QXdvQjhkd1ZqWGZ6OGtrUk5qbHFDcHViL3RvQWkvZGIraW9aYUJkeHR4cENBPT0=
 --------------------------------------------------------------------------------
 KEY;
 

@@ -2,6 +2,11 @@
 title: Changelog
 ---
 
+## 4.0.1.1 - (2022-01-02)
+### Added
+- installierbar in OXID in 6.5.0 und 6.5.1
+
+---
 ## 4.0.1.0 - (2021-05-05)
 ### Added
 - Analysemodus eingefügt (belässt die Berechtigungen wie bei der Originalanmeldung)
