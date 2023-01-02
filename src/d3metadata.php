@@ -1,13 +1,24 @@
-<?php //006f1
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package LoginAsCustomer @version 4.0.1.0 PHPcust (05.05.2021) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2021, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPpMqo9iKdJ7SuG5TkCT6l2bC19eiEKH6JizLk3vErF5CpuL5xSHv+4LGETsNwRw3kRXT5Nqi
-SXVGbeifwSSNRTQ5EJFh9YsW8fUuXLSIA9IY60wdfluUTqnNke4zlrBRI/TtHYo5ZuOYToPmtg+5
-ShDYVtdI+oA8uM+aXfMbdcz66yb4FSNGSLBUmJB2l+QW2RTOEYlNRf3TjuFCecOpD7uW5ccyDWLd
-PU1woJNN7YWjbfqIaCAotW5MM/2Ud61M8L5QVmtdXpE7amCUWiAv22Y/avjYPOv/IxoXTvozB1Qa
-XXI4KFaZM1eJskjdcOK2Iz0n1sLYV+3LLNuJ66O5WHldOyGqpGFc2KP4uHpHEqx4n5oPfeXTwkcf
-PqfZDupiE0T41rNMCQdXsejyuPdtRqxc/Me/yTY3TIWVdJFFqq3rD5POXQj8c8riydRk1OXbZtGa
-ydbJ68iXnsoJ/ySBpHYiZBvMN7vLATXWGbQ+ea8PEiq8nSJo1Qvah1SBoTWvN0IhQXbKGfRlzZCU
-bS2HRzGH92b7HhXBTGKWK/fv7iT9vTaEmkR4GUqjdRWilVDNad+43la/y7pFT51bcXsmO+Lvx8Cr
-Blxxw53yX6iDpSIDf3H55kSvzPXKPUud/CcGQJe5NSJGXNSn0fJbjhU1CQW=
+<?php
+
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
+ * @link      http://www.oxidmodule.com
+ */
+
+use D3\Remotelogin\models\d3_remotelogin_update;
+
+$aModule = [
+    'd3SetupClasses' => [
+        d3_remotelogin_update::class
+    ]
+];
